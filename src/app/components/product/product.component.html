@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table mt-2 table-hover table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{p.id}}</td>
+        <td>{{p.productName}}</td>
+        <td>{{p.productDescription}}</td>
+        <td>{{p.quantity}}</td>
+        <td>{{p.price}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
